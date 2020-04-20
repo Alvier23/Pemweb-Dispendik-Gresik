@@ -1,0 +1,119 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+.vertical-nav {
+    min-width: 14rem;
+    width: 9rem;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s;
+  }
+  
+  .page-content {
+    width: calc(100% - 17rem);
+    margin-left: 17rem;
+    transition: all 0.4s;
+  }
+
+  .navertical ul{
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    background-color: #404B58;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 13px;
+    border-bottom: 1px solid #5E7082;
+  }
+
+  .navertical ul li a{
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid #5E7082;
+
+  }
+
+  .navertical a:hover{
+    background-color: #5E7082;
+    color: white;
+    transition: 0.5s;
+  }
+/* Dropdown */
+
+  /* for toggle behavior */
+  
+  #sidebar.active {
+    margin-left: -12rem;
+  }
+  
+  #content.active {
+    width: 100%;
+    margin: 0;
+  }
+  
+  
+  @media (max-width: 768px) {
+
+    #sidebar {
+      margin-left: -17rem;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+      margin: 0;
+    }
+    #content.active {
+      margin-left: 17rem;
+      width: calc(100% - 17rem);
+    }
+  }
+  
+  /*
+  *
+  * ==========================================
+  * FOR DEMO PURPOSE
+  * ==========================================
+  *
+  */
+  
+  body {
+    background-image: url(http://dispendik-gresik.net/template/dispendik/images/bg-damar-kurung-128.gif);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  .separator {
+    margin: 3rem 0;
+    border-bottom: 1px dashed #fff;
+  }
+  
+  .text-uppercase {
+    letter-spacing: 0.1em;
+  }
+  
+  .text-gray {
+    color: #aaa;
+  }
+
+
+  .carousel-inner img {
+    box-shadow: 10px 10px 35px rgba(0, 0, 0, 1);
+  }
+
+  .carousel-caption{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
