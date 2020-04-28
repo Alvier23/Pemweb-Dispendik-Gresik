@@ -6,6 +6,61 @@
 *
 */
 
+
+.drop{
+  float: left;
+  overflow: hidden;
+}
+
+.drop .dropbtn{
+  margin: 0;
+  padding: 9px 10px;
+  text-align: inherit;
+  width: 220px;
+  background-color: #404B58;
+  color: #fff;
+  border: none;
+  font-size: 13px;
+  font-family: 'Titillium Web', sans-serif;
+  overflow: auto;
+  border-bottom: 1px solid #5E7082;
+}
+
+.drop i{
+  padding-left: 150px;
+}
+
+.drop-item{
+  display: none;
+  position: fixed;
+  left: 220px;
+  top: 205px;
+  background-color: #404B58;
+  min-width: 150px;
+  border: 1px solid #fff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+
+.drop-item a{
+  float: none;
+  color: #fff;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.drop-item a:hover{
+  background-color: #ddd;
+}
+
+.drop:hover .drop-item{
+  display: block;
+  transition: 1s;
+}
+
 .vertical-nav {
     min-width: 14rem;
     width: 9rem;
@@ -21,6 +76,7 @@
     width: calc(100% - 17rem);
     margin-left: 17rem;
     transition: all 0.4s;
+    font-family: 'Titillium Web', sans-serif;
   }
 
   .navertical ul{
@@ -45,7 +101,7 @@
 
   }
 
-  .navertical a:hover{
+  .navertical a:hover, .drop:hover .dropbtn {
     background-color: #5E7082;
     color: white;
     transition: 0.5s;
